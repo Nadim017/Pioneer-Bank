@@ -52,19 +52,19 @@
           <div class="col-md-4">
             <div class="item item1">
               <h5>Deposit</h5>
-              <h2>$00</h2>
+              <h2>$ <span id="current-deposit">00</span></h2>
             </div>
           </div>
           <div class="col-md-4">
             <div class="item item2">
               <h5>Withdraw</h5>
-              <h2>$00</h2>
+              <h2>$ <span id="currentWidthdraw">00</span></h2>
             </div>
           </div>
           <div class="col-md-4">
             <div class="item item3">
               <h5>Balance</h5>
-              <h2>$1240</h2>
+              <h2>$ <span id="balance-field">1250</span></h2>
             </div>
           </div>
         </div>
@@ -77,10 +77,12 @@
                 type="text"
                 class="form form-control mb-3"
                 name="text"
-                id="deposit"
+                id="deposit-amount"
                 placeholder="$ amount you want to deppsit"
               />
-              <button class="btn btn-success">Deposit</button>
+              <button id="deposit-button" class="btn btn-success">
+                Deposit
+              </button>
             </div>
           </div>
           <div class="col-md-6">
@@ -91,10 +93,12 @@
                 type="text"
                 class="form form-control mb-3"
                 name="text"
-                id="withdraw"
+                id="withdraw-amount"
                 placeholder="$ amount you want to withdraw"
               />
-              <button class="btn btn-success">Withdraw</button>
+              <button id="withdraw-button" class="btn btn-success">
+                Withdraw
+              </button>
             </div>
           </div>
         </div>
